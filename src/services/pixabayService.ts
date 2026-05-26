@@ -1,6 +1,6 @@
 import { PixabayImage, PixabayResponse } from '../types';
 
-const PIXABAY_KEY = '56027432-8b0e6594cb2892459e791c410';
+const PIXABAY_KEY = process.env.REACT_APP_PIXABAY_KEY || '';
 const PIXABAY_BASE = 'https://pixabay.com/api';
 
 export const fetchPixabayImages = async (
